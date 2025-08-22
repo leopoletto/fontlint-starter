@@ -2,6 +2,7 @@
 
 use App\Http\Csp\WizardPreset;
 use App\Support\LaravelViteNonceGenerator;
+use Spatie\Csp\Presets\PlausibleAnalytics;
 
 return [
 
@@ -11,6 +12,7 @@ return [
      */
     'presets' => [
         WizardPreset::class,
+        PlausibleAnalytics::class,
     ],
 
     /**
