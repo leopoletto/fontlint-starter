@@ -25,7 +25,6 @@
 
 @foreach(config('seo.meta') as $property => $content)
     <meta property="{{$property}}" content="{{$content}}"/>
-
 @endforeach
     @vite(["resources/js/app.js", "resources/css/app.css"])
 </head>
