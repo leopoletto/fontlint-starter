@@ -26,9 +26,6 @@
 @foreach(config('seo.meta') as $property => $content)
     <meta property="{{$property}}" content="{{$content}}"/>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 @endforeach
     @vite(["resources/js/app.js", "resources/css/app.css"])
 </head>

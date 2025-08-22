@@ -18,7 +18,7 @@
 
             <h1 class="text-4xl sm:text-[64px] mt-10 font-headline leading-tight tracking-tight">
                 <span class="text-primary-700 px-1">Optimize & Self-Host Your Web Fonts, </span>
-                <em class="text-primary-800 px-1 pb-1 italic font-semibold">the Right Way</em>
+                <em class="text-primary-800 px-1 pb-1 italic font-normal">the Right Way</em>
             </h1>
             @if(!$verified && !$pending)
             <p class="px-2 md:px-0 text-xl max-w-4xl mx-auto font-normal text-stone-600 mt-5 mb-5 leading-relaxed">
