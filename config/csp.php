@@ -2,7 +2,6 @@
 
 use App\Http\Csp\WizardPreset;
 use App\Support\LaravelViteNonceGenerator;
-use Spatie\Csp\Presets\GoogleFonts;
 
 return [
 
@@ -11,7 +10,7 @@ return [
      * any class that implements `Spatie\Csp\Preset`
      */
     'presets' => [
-        WizardPreset::class
+        WizardPreset::class,
     ],
 
     /**
@@ -40,7 +39,7 @@ return [
      * All violations against a policy will be reported to this url.
      * A great service you could use for this is https://report-uri.com/
      */
-    'report_uri' => env('CSP_REPORT_URI', env('APP_URL') . '/csp-report'),
+    'report_uri' => env('CSP_REPORT_URI', env('APP_URL').'/csp-report'),
 
     /*
      * Headers will only be added if this setting is set to true.

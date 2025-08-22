@@ -4,71 +4,27 @@
     @php($pending = session('subscribed_pending'))
     @php($verified = session('subscribed_verified'))
     <section class="relative min-h-screen hero grid py-10  justify-center border-b border-b-stone-400">
-        <div class="mx-auto max-w-3xl px-2 sm:px-6 justify-start text-center flex flex-col gap-5">
+        <div class="mx-auto max-w-4xl px-2 sm:px-6 justify-start text-center flex flex-col gap-5">
             <header>
                 <nav
                     class="mx-auto flex w-full max-w-3xl items-center justify-evenly"
                     aria-label="Global"
                 >
-                    <div class="mx-auto flex self-center">
-                        <x-brand.wrapper>
-                            <x-slot:symbol>
-                                <x-brand.symbol/>
-                            </x-slot>
-                            <x-slot:logo>
-                                <x-brand.logo/>
-                            </x-slot>
-                        </x-brand.wrapper>
+                    <div class="mx-auto flex self-center pt-10">
+                        <x-brand.logo class="h-18 text-primary-900"/>
                     </div>
                 </nav>
             </header>
 
-            <h1 class="text-4xl sm:text-5xl mt-10 font-headline font-semibold leading-[118%] tracking-tight ">
-                <span class="text-emerald-900  bg-emerald-200 px-1">Interactive Lighthouse audits,</span>
-                <br>
-                <span class="bg-emerald-900 text-emerald-200 px-1 pb-1">explained by experts</span>
+            <h1 class="text-4xl sm:text-[64px] mt-10 font-headline leading-tight tracking-tight">
+                <span class="text-primary-700 px-1">Optimize & Self-Host Your Web Fonts, </span>
+                <em class="text-primary-800 px-1 pb-1 italic font-semibold">the Right Way</em>
             </h1>
             @if(!$verified && !$pending)
-            <div
-                class="mt-6 grid w-full grid-cols-2 gap-5 space-y-2 sm:space-y-0 sm:flex md:max-w-2xl"
-            >
-                <x-gauge.circle
-                    title="Performance"
-                    :score="rand(30, 60)"
-                >
-                    <x-slot:icon>
-                        <x-icons.performance/>
-                    </x-slot>
-                </x-gauge.circle>
-                <x-gauge.circle
-                    title="Accessibility"
-                    :score="rand(30, 60)"
-                >
-                    <x-slot:icon>
-                        <x-icons.accessibility/>
-                    </x-slot>
-                </x-gauge.circle>
-                <x-gauge.circle
-                    title="Best Practices"
-                    :score="rand(60, 85)"
-                >
-                    <x-slot:icon>
-                        <x-icons.best-practices/>
-                    </x-slot>
-                </x-gauge.circle>
-                <x-gauge.circle title="SEO" :score="rand(70, 90)">
-                    <x-slot:icon>
-                        <x-icons.seo-audit/>
-                    </x-slot>
-                </x-gauge.circle>
-            </div>
-            <p class="px-2 md:px-0 text-xl font-normal text-stone-600 mt-10 mb-5 leading-relaxed">
-                We turn <strong>Chrome Lighthouse</strong> reports into step-by-step lessons. <br><br class="sm:hidden">
-                Learn why each issue matters—and how to fix it—across.<br><br class="sm:hidden">
-                Performance,
-                Accessibility,
-                Best Practices, and
-                <abbr class="underline underline-offset-4" title="Search Engine Optimization">SEO</abbr>.
+            <p class="px-2 md:px-0 text-xl max-w-4xl mx-auto font-normal text-stone-600 mt-5 mb-5 leading-relaxed">
+                Generate lighter font files with <em class="underline underline-offset-2">custom fallbacks</em>,
+                <em class="underline underline-offset-2">unicode-aware subsets</em>, and <em class="underline underline-offset-2">license-safe metadata.</em>
+                Get instant analysis and recommendations to cut payloads by up to 70%.
             </p>
             @endif
 
@@ -100,7 +56,7 @@
                                placeholder="your@email.com"
                                autocomplete="email">
                         <button type="submit"
-                                class="rounded-xl w-full min-w-fit mt-2 sm:mt-0 sm:w-auto bg-emerald-200 px-5 py-4 font-normal text-emerald-900  transition-all border-b-4 border-b-smoky-black hover:border-b-6 active:border-b-4 shadow-sm  focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                                class="rounded-xl w-full min-w-fit mt-2 sm:mt-0 sm:w-auto bg-primary-700 px-5 py-4 font-normal text-white  transition-all border-b-4 border-b-smoky-black hover:border-b-6 active:border-b-4 shadow-sm  focus:outline-none focus:ring-2 focus:ring-primary-500">
                             {{$pending ? 'Request Again' : 'Get early access'}}
                         </button>
                     </form>
@@ -108,7 +64,7 @@
                 @error('email')
                 <p class="mt-1 text-base text-red-700">{{ $message }}</p>
                 @enderror
-                <p class="mt-1 text-base text-stone-700">No spam. One or two emails a month. Unsubscribe anytime.</p>
+                <p class="mt-1 text-base text-stone-700">Be the first to test new font optimization tools and datasets.</p>
             @endif
 
         </div>

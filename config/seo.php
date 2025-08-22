@@ -2,8 +2,8 @@
 
 return [
     'name' => config('app.name'),
-    'title' => 'Wizard Compass — Course on Web Audits, Fonts & Privacy',
-    'description' => 'Learn how to audit fonts, validate CSP, and build privacy-first websites. Wizard Compass is a hands-on course with open tools and practical guidance.',
+    'title' => 'Font Lint — Optimize & Self-Host Your Web Fonts',
+    'description' => 'Generate lighter, license-safe web fonts with custom fallbacks and Unicode-aware subsets. Be the first to test new tools and explore open font datasets',
     'author' => 'Leonardo Poletto',
     'url' => config('app.url'),
 
@@ -20,7 +20,7 @@ return [
         '@type' => 'WebSite',
         'name' => config('app.name'),
         'url' => config('app.url'),
-        'description' => 'Learn how to audit fonts, validate CSP, and build privacy-first websites. Wizard Compass is a hands-on course with open tools and practical guidance.',
+        'description' => 'Optimize & self-host web fonts with lighter files, custom fallbacks, and open datasets.',
     ],
 
     /*
@@ -33,12 +33,12 @@ return [
     |
     */
     'opengraph' => [
-        'title' => 'Wizard Compass — Learn Web Audits & Fonts in Practice',
+        'title' => 'Font Lint — Optimize & Self-Host Your Web Fonts',
         'type' => 'website',
         'url' => config('app.url'),
         'image' => fn() => asset('og.webp'),
         'image:alt' => fn() => asset('og.webp'),
-        'description' => 'A practical course for developers: font auditing, CSP validation, accessibility checks, and privacy tools. Build better websites with hands-on guidance.',
+        'description' => 'Generate lighter, license-safe web fonts with custom fallbacks and Unicode-aware subsets. Be the first to test new tools and explore open font datasets',
         'locale' => 'en-US',
     ],
 
@@ -54,8 +54,8 @@ return [
         'card' => 'summary_large_image',
         'site' => config('app.url'),
         'creator' => '@leopoletto',
-        'title' => 'Wizard Compass — Practical Course for Web Audits & Fonts',
-        'description' => 'Step-by-step learning on fonts, privacy, and performance. Wizard Compass is your lab to experiment and master web audits.',
+        'title' => 'Font Lint — Optimize & Self-Host Your Web Fonts',
+        'description' => 'Generate lighter, license-safe web fonts with custom fallbacks and Unicode-aware subsets. Be the first to test new tools and explore open font datasets',
         'image' => fn() => asset('og.webp'),
         'image:alt' => fn() => asset('og.webp'),
     ],
@@ -105,7 +105,7 @@ return [
     |
     */
     'meta' => [
-        'msapplication-TileColor' => '#00cc66',
-        'theme-color' => '#00cc66',
+        'msapplication-TileColor' => '#4747dde',
+        'theme-color' => '#4747dde',
     ]
 ];

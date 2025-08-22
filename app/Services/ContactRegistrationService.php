@@ -5,10 +5,10 @@ namespace App\Services;
 use App\Mail\ConfirmSubscriptionMail;
 use App\Models\Contact;
 use Illuminate\Mail\SentMessage;
-use Log;
-use Mail;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Resend\Client;
-use Str;
 
 
 class ContactRegistrationService

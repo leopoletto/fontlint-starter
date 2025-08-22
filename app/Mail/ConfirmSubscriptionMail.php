@@ -26,7 +26,7 @@ class ConfirmSubscriptionMail extends Mailable
     public function build(): self
     {
         return $this->markdown('mail.subscription.confirm')
-            ->subject('Confirm your WizardCompass early access')
+            ->subject('Confirm your Font Lint early access')
             ->with(['verifyUrl' => $this->verifyUrl])
             ->from(new Address('hello@updates.leopoletto.dev', 'Leonardo Poletto'));
     }
