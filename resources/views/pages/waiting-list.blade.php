@@ -3,20 +3,20 @@
 @section('content')
     @php($pending = session('subscribed_pending'))
     @php($verified = session('subscribed_verified'))
-    <section class="relative min-h-screen hero grid py-10  justify-center border-b border-b-stone-400">
+    <section class="relative min-h-screen hero grid py-3 sm:py-10  justify-center border-b border-b-stone-400">
         <div class="mx-auto max-w-4xl px-2 sm:px-6 justify-start text-center flex flex-col gap-5">
             <header>
                 <nav
                     class="mx-auto flex w-full max-w-3xl items-center justify-evenly"
                     aria-label="Global"
                 >
-                    <div class="mx-auto flex self-center pt-10">
+                    <div class="mx-auto flex self-center pt-5 sm:pt-10">
                         <x-brand.logo class="h-18 text-primary-900"/>
                     </div>
                 </nav>
             </header>
 
-            <h1 class="text-4xl sm:text-[64px] mt-10 font-headline leading-tight tracking-tight">
+            <h1 class="text-4xl sm:text-[64px] mt-3 sm:mt-10 font-headline leading-tight tracking-tight">
                 <span class="text-primary-700 px-1">Optimize & Self-Host Your Web Fonts, </span>
                 <em class="text-primary-800 px-1 pb-1 italic font-normal">the Right Way</em>
             </h1>
